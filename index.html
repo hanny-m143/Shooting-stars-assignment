@@ -1,0 +1,40 @@
+<!--
+    
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>background-image</title>
+    <style>
+        body {
+            background-image: url(./sun.png), url(./Earth.png), url(./shooting\ star.gif);
+            background-repeat: no-repeat, no-repeat, no-repeat;
+            background-size: 600px 600px, 500px 500px, 100% 2020px;
+            background-attachment: fixed, scroll, fixed;
+            background-position: -220px -220px, bottom left -90px, center;
+        }
+
+        div {
+            float: right;
+            height: 100vh;
+            position: relative;
+        }
+
+        #div {
+            height: 2000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div"> </div>
+    <div>
+        <marquee direction="up" scrollamount="50" behavior="scroll" loop="infinite"><img src="spaceship.gif"
+                width="300px" height="2000px"></marquee>
+    </div>
+</body>
+
+
+</html>
